@@ -10,6 +10,7 @@
   <body>
     <header>
       <img src="logo.png" />
+      <h1 class="header_text">Boutique Hair Salon</h1>
     </header>
     <nav>
       <ul>
@@ -22,13 +23,17 @@
     <main>
       <section class="sale">
         <article>
-          <h1>30 % Off All Week</h1>
-          <p class="sale_text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-            sint odio natus amet nulla ea dolorem consequuntur vero, fugiat illo
-            placeat magni quae recusandae sed sapiente! Ut dolores explicabo
-            quidem.
-          </p>
+          <div class="lighter_container">
+            <h1 class="sale_header">30 % Off All Week</h1>
+          </div>
+          <div class="lighter_container">
+            <p class="sale_text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+              sint odio natus amet nulla ea dolorem consequuntur vero, fugiat
+              illo placeat magni quae recusandae sed sapiente! Ut dolores
+              explicabo quidem.
+            </p>
+          </div>
         </article>
       </section>
       <section class="section_container">
@@ -41,7 +46,9 @@
             placeat magni quae recusandae sed sapiente! Ut dolores explicabo
             quidem.
           </p>
-          <a href="services.html">See our services</a>
+          <div class="button_container">
+            <a class="button" href="index.html">See our services</a>
+          </div>
         </article>
         <article class="card">
           <h2>Book Now</h2>
@@ -52,17 +59,33 @@
             placeat magni quae recusandae sed sapiente! Ut dolores explicabo
             quidem.
           </p>
-          <a href="book.html">Book now</a>
+          <div class="button_container">
+            <a class="button" href="index.html">Book now</a>
+          </div>
         </article>
         <article class="card">
           <h2>Salon Hours</h2>
-          <img src="schedule.jpg" />
+          <img src="salon_hours.jpg" />
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-            sint odio natus amet nulla ea dolorem consequuntur vero, fugiat illo
-            placeat magni quae recusandae sed sapiente! Ut dolores explicabo
-            quidem.
+            sint odio natus amet nulla ea dolorem consequuntur.
           </p>
+          <div class="table_container">
+            <table>
+              <tr>
+                <td>Mon - Fri:</td>
+                <td>10am - 8pm</td>
+              </tr>
+              <tr>
+                <td>Sat:</td>
+                <td>10am - 4pm</td>
+              </tr>
+              <tr>
+                <td>Sun:</td>
+                <td>Closed</td>
+              </tr>
+            </table>
+          </div>
         </article>
       </section>
     </main>

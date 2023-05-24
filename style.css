@@ -4,13 +4,19 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
-h1 {
+.sale_header {
   font-size: 3rem;
   margin: 0;
-  color: #f2e0d2;
+  color: #d0604c;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0 1rem;
+  border-radius: 1rem;
+}
+
+.lighter_container {
+  display: flex;
 }
 
 h2 {
@@ -18,19 +24,26 @@ h2 {
 }
 
 header {
-  padding: 3rem 0;
+  padding: 2rem 0 1rem;
 }
 
 header > img {
   display: block;
   margin: 0 auto;
-  width: 400px;
+  width: 300px;
+}
+
+.header_text {
+  color: #d0604c;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 nav {
-  background-color: #d0604c;
+  background-color: #d47b64;
   border-radius: 1rem;
-  margin-bottom: 2rem;
+  padding: 0 1rem;
+  margin: 0 1rem 2rem;
 }
 
 nav ul {
@@ -51,35 +64,42 @@ nav li a {
   color: #f2e0d2;
 }
 
-section.sale {
-  background-image: url(./sale1.png);
+.sale {
+  background-image: url(./manicure_1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 2rem;
   border-radius: 2rem;
-  margin-bottom: 2rem;
+  margin: 0 1rem 2rem;
 }
 
 .sale_text {
   width: 70%;
-  font-weight: 600;
-  color: #f2e0d2;
+  font-weight: 700;
+  color: #d0604c;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .section_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  margin: 0 1rem 2rem;
 }
 
 .card {
   width: 25%;
-  background-color: #d0604c;
-  padding: 1rem;
+  color: #d47b64;
+  padding: 0 1.2rem 2rem;
   border-radius: 1rem;
-  color: #f2e0d2;
+  background-color: #f2e0d2;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 .card img {
@@ -87,10 +107,19 @@ section.sale {
   border-radius: 1rem;
 }
 
+.table_container {
+  display: flex;
+  justify-content: center;
+}
+
+td {
+  padding: 0.2rem 0.5rem;
+}
+
 footer {
   display: flex;
   padding: 1rem;
-  border-top: solid #d0604c 2px;
+  border-top: solid #d47b64 2px;
   margin-bottom: 2rem;
 }
 
@@ -110,5 +139,47 @@ footer div {
 .copyright {
   display: flex;
   justify-content: flex-end;
-  color: #d0604c;
+  color: #d47b64;
+}
+
+.button_container {
+  margin: 2rem 0 1rem;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #d47b64;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #f2e0d2;
+  text-transform: capitalize;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media (max-width: 930px) {
+  .card {
+    width: 40%;
+  }
+
+  .card:nth-child(3) {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .card {
+    width: 65%;
+  }
+
+  .card:nth-child(2) {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 80%;
+  }
 }
